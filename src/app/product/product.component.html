@@ -45,7 +45,10 @@
                   
               </td>
               <td>
-                  {{ product.productName }}
+                <a [routerLink]="['/products',product.productId]">
+                                    {{ product.productName }}
+
+                </a>
         
               </td>
               <td>{{ product.productCode | lowercase | converToSpaces:'-'}}</td>
